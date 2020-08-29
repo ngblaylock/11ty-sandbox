@@ -2,11 +2,8 @@
 layout: default
 ---
 
-<h1>{{ title }}</h1>
-<div>
-  Published on {{ date }}
+<div class="container mt-3">
+  <article>
+    {{ content | safe }}
+  </article>
 </div>
-
-<article>
-  {{ content | safe }}
-</article>
