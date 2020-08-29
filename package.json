@@ -1,0 +1,26 @@
+{
+  "name": "11ty-sandbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eleventy.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "serve": "npx @11ty/eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ngblaylock/11ty-sandbox.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ngblaylock/11ty-sandbox/issues"
+  },
+  "homepage": "https://github.com/ngblaylock/11ty-sandbox#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.0"
+  }
+}
