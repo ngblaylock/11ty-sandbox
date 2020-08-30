@@ -1,5 +1,4 @@
 ---
-layout: blog.njk
 title: Blog Home
 ---
 
