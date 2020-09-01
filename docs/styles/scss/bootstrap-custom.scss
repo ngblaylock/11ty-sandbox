@@ -11,6 +11,7 @@
 @import "./bootstrap-required";
 
 // Map Overrides go below this line
+$theme-colors: map-remove($theme-colors, "info", "success", "danger");
 
 // Optional Bootstrap Partials
 @import "./bootstrap-options";
@@ -18,12 +19,4 @@
 /*!
  Custom Styles by Nathan Blaylock
 */
-
-.site {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  main {
-    flex: 1 0 auto;
-  }
-}
+@import "./custom";

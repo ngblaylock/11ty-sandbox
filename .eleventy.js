@@ -3,7 +3,7 @@ module.exports = eleventyConfig => {
   eleventyConfig.addPassthroughCopy('assets');
   eleventyConfig.addPassthroughCopy('styles');
   eleventyConfig.addPassthroughCopy('js');
-  eleventyConfig.addPassthroughCopy('images');
+  eleventyConfig.addPassthroughCopy('img');
   eleventyConfig.addPassthroughCopy('CNAME');
 
   // Returning something from the configuration function is optional

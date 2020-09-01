@@ -22,5 +22,8 @@
   "homepage": "https://github.com/ngblaylock/11ty-sandbox#readme",
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.2"
   }
 }
