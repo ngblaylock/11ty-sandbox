@@ -1,0 +1,19 @@
+---
+layout: content
+title: Blog Home
+tags: false
+---
+
+<h1>Blog Home</h1>
+
+<p>
+  This is the blog home. Here is a lits of all my fabulous blogs:
+</p>
+
+<ul>
+
+{%- for blog in collections.blogs -%}
+  <li><a href="{{ blog.url }}">{{ blog.data.title }}</a></li>
+{%- endfor -%}
+</ul>
+

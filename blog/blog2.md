@@ -1,5 +1,5 @@
 ---
-title: Blog 2
+title: Second blog, but actually first made
 ---
 
 This is a second blog post. I really like it. I think it would be a really good blogging platform to use someday for some reason. 

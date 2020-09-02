@@ -1,0 +1,15 @@
+{% extends "default.njk" %}
+{% block customstyles %}
+  <style>
+    .container{
+      background: red;
+    }
+  </style>
+{% endblock %}
+{% block body %}
+<img src="{{ image }}" style="width: 100%;" />
+<div class="container">
+  <h1>{{ title }}</h1>
+  {{ content | safe }}
+</div>
+{% endblock %}
