@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
-    <link rel="manifest" href="/assets/site.webmanifest">
-    <link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/meta/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/meta/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/meta/favicon-16x16.png">
+    <link rel="manifest" href="/img/meta/site.webmanifest">
+    <link rel="mask-icon" href="/img/meta/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#5a5a5a">
     <meta name="theme-color" content="#ffffff">
     <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
@@ -32,55 +32,74 @@
       <li class="nav-item ">
         <a class="nav-link" href="/things-to-try">Things To Try</a>
       </li>
-      <li class="nav-item dropdown ">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Blog
-        </a>
-        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="/blog">Home</a>
-          <a class="dropdown-item" href="/blog/blog2">Blog 2</a>
-        </div>
+      <li class="nav-item ">
+        <a class="nav-link" href="/blog">Blog</a>
       </li>
     </ul>
   </div>
 </nav>
 
-
-
       <main>
     
-<img src="/img/beach.png" style="width: 100%;" />
+<img src="/img/beach.png" style="width: 100%;"/>
 <div class="container py-5">
-  <h1>11ty Test - With Liquid</h1>
-  <p>This is a <a href="#">quick test</a> to see how Nunjucks works.</p>
-  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem animi cumque perferendis quisquam totam incidunt vel eaque. Modi laboriosam quisquam fugit deserunt dolorem ducimus, cumque nisi sed. Aperiam, quam incidunt.</p>
-  <div class="py-1 px-2 bg-primary text-white">
-    .bg-primary
-  </div>
-  <div class="py-1 px-2 bg-secondary text-white">
-    .bg-secondary
-  </div>
-  <div class="py-1 px-2 bg-warning">
-    .bg-warning
-  </div>
-  <div class="py-1 px-2 bg-dark text-white">
-    .bg-dark
-  </div>
-  <div class="py-1 px-2 bg-medium text-white">
-    .bg-medium
-  </div>
-  <div class="py-1 px-2 bg-light">
-    .bg-light
-  </div>
-  
-  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem animi cumque perferendis quisquam totam incidunt vel eaque. Modi laboriosam quisquam fugit deserunt dolorem ducimus, cumque nisi sed. Aperiam, quam incidunt.</p>
-  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem animi cumque perferendis quisquam totam incidunt vel eaque. Modi laboriosam quisquam fugit deserunt dolorem ducimus, cumque nisi sed. Aperiam, quam incidunt.</p>
+  <div class="row">
+    <div class="col-sm-8">
+      <h1>11ty Test - With Liquid</h1>
+      <p>Here is a quick test with Liquid. I like it more than Nunjucks. The <a href="https://shopify.github.io/liquid/" target="_blank">Liquid Documentation</a> seems to be better organized and easier to follow.</p>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem animi cumque perferendis quisquam totam incidunt vel eaque. Modi laboriosam quisquam fugit deserunt dolorem ducimus, cumque nisi sed. Aperiam, quam incidunt.</p>
+      <div class="py-1 px-2 bg-primary text-white">
+        .bg-primary
+      </div>
+      <div class="py-1 px-2 bg-secondary text-white">
+        .bg-secondary
+      </div>
+      <div class="py-1 px-2 bg-warning">
+        .bg-warning
+      </div>
+      <div class="py-1 px-2 bg-dark text-white">
+        .bg-dark
+      </div>
+      <div class="py-1 px-2 bg-medium text-white">
+        .bg-medium
+      </div>
+      <div class="py-1 px-2 bg-light mb-3">
+        .bg-light
+      </div>
 
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem animi cumque perferendis quisquam totam incidunt vel eaque. Modi laboriosam quisquam fugit deserunt dolorem ducimus, cumque nisi sed. Aperiam, quam incidunt.</p>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem animi cumque perferendis quisquam totam incidunt vel eaque. Modi laboriosam quisquam fugit deserunt dolorem ducimus, cumque nisi sed. Aperiam, quam incidunt.</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>
+        Blogs
+      </h3>
+      <p>Read the best of the latest blogs</p>
+      
+      
+        <a href="/blog/2020-09-01-blog4/" class="btn btn-light text-left btn-block mb-2">
+          Pretty Cool fourth blog post<br />
+          <small>September 01, 2020</small>
+        </a>
+      
+        <a href="/blog/2020-08-06-blog1/" class="btn btn-light text-left btn-block mb-2">
+          First Blog Post - Cool<br />
+          <small>August 06, 2020</small>
+        </a>
+      
+        <a href="/blog/2020-08-01-blog2/" class="btn btn-light text-left btn-block mb-2">
+          Second blog, but actually first made<br />
+          <small>August 01, 2020</small>
+        </a>
+      
+      <a href="/blog">See All Blogs</a>
+    </div>
+  </div>
 </div>
       </main>
 
       <footer class="bg-primary text-center text-white py-3">
-  <img src="https://nathanblaylock.com/img/logo-white-nathan-blaylock-media.svg" class="mb-3" style="max-height: 2em;" />
+  <a href="https://nathanblaylock.com" target="_blank"><img src="https://nathanblaylock.com/img/logo-white-nathan-blaylock-media.svg" class="mb-3" style="max-height: 2em;" /></a>
   <i class="far fa-copyright"></i> <a class="text-white" href="https://nathanblaylock.com" target="_blank">Nathan Blaylock</a>, 2020
 </footer>
     </div>
