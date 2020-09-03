@@ -1,8 +1,14 @@
 ---
 layout: default.njk
 title: Home
+pagination:
+  data: collections.blogs
+  size: 3
+  reverse: true
+  alias: b
 ---
 
+<<<<<<< HEAD
 <img src="/img/beach.png" style="width: 100%;" />
 <div class="container py-5">
   <h1>11ty Test</h1>
@@ -30,4 +36,28 @@ title: Home
   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem animi cumque perferendis quisquam totam incidunt vel eaque. Modi laboriosam quisquam fugit deserunt dolorem ducimus, cumque nisi sed. Aperiam, quam incidunt.</p>
   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem animi cumque perferendis quisquam totam incidunt vel eaque. Modi laboriosam quisquam fugit deserunt dolorem ducimus, cumque nisi sed. Aperiam, quam incidunt.</p>
 
+=======
+<img src="http://lorempixel.com/1200/300/sports/5" style="width: 100%;"/>
+<div class="container py-5">
+  <div class="row">
+    <div class="col-sm-8">
+      <h1>11ty Test</h1>
+      <p>This is a quick test to see how Nunjucks works.</p>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem animi cumque perferendis quisquam totam incidunt vel eaque. Modi laboriosam quisquam fugit deserunt dolorem ducimus, cumque nisi sed. Aperiam, quam incidunt.</p>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem animi cumque perferendis quisquam totam incidunt vel eaque. Modi laboriosam quisquam fugit deserunt dolorem ducimus, cumque nisi sed. Aperiam, quam incidunt.</p>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem animi cumque perferendis quisquam totam incidunt vel eaque. Modi laboriosam quisquam fugit deserunt dolorem ducimus, cumque nisi sed. Aperiam, quam incidunt.</p>
+    </div>
+    <div class="col-sm-4">
+      <div class="bg-light p-3">
+        <h3>Recent Blog Articles</h3>
+        {%- for blog in b -%}
+          <div>
+            <a class="btn btn-block btn-primary mb-2 text-left" href="{{ blog.url }}">{{ blog.data.title }}</a>
+          </div>
+        {%- endfor -%}
+        <a href="/blog/">See All Blog Articles</a>
+      </div>
+    </div>
+  </div>
+>>>>>>> basic
 </div>

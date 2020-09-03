@@ -15,13 +15,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <title>{{ title }}
       | 11ty Sandbox</title>
+      {% block customstyles %}
+    {% endblock %}
   </head>
   <body>
     <div class="site">
       {% include "./partials/nav.njk" %}
 
       <main>
-        {{ content | safe }}
+        {% block body %}
+    {{ content | safe }}
+    {% endblock %}
       </main>
 
       {% include "./partials/footer.njk" %}
