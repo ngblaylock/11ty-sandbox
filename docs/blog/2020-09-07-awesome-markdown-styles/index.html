@@ -37,7 +37,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
     />
-    <title>Super duper cool Post 3 | 11ty Sandbox</title>
+    <title>Awesome Markdown Styles | 11ty Sandbox</title>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -73,9 +73,43 @@
   <a href="/blog/">&lArr; All Blogs</a>
   <article>
     <h1>
-      Super duper cool Post 3
+      Awesome Markdown Styles
     </h1>
-    <p>Whis is my third blog. Nothing too special here.</p>
+    <p>Hey, so this is a cool blog article, but really, it is just a good time to write down some thoughts about 11ty. I really, really like it. I like it for its simplicity in creating simple static websites. I have used Nuxt in the past, and really like that, however I have had to use Bootstrap Vue since I didn't want to use both Vue and jQuery. Some static websites didn't even require using any Vue, so I wish I could have made it real simple and just used jQuery instead. 11ty solved that, and as well, it made writing blogs and including things really easy.</p>
+<p>One disadvantage that I have found is that you can't write valid, page specific css. Or at least to my knowledge. Once I figure that out, I think I will be pretty happy. Also, I like the Vue syntax more than I like Liquid, but it isn't as big of a deal.</p>
+<p>Lets try markdown syntax. <em>This is italic</em>. This is <strong>bold</strong>. This is a <s>stikethrough</s>. This is <em><strong>bold and italic</strong></em>. If you want to use <code>code</code> text, that is cool too. I guess there isn't any markdown underlines, but you can use <u>HTML Syntax</u> to get it to work. Let's put in an image:</p>
+<p><img src="https://nathanblaylock.com/img/blaylock-nathan-1-square.png" alt="Nathan Blaylock"></p>
+<p>What a handsome guy.</p>
+<p>Here is a table:</p>
+<table>
+<thead>
+<tr>
+<th>Awesome</th>
+<th>Cool</th>
+<th>Table</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Here</td>
+<td>Is</td>
+<td>Table Data in our big table</td>
+</tr>
+<tr>
+<td>I had to add</td>
+<td>Some jQuery to get</td>
+<td>the table to format well</td>
+</tr>
+</tbody>
+</table>
+<p>Here is a code block:</p>
+<pre><code>&lt;script&gt;
+  $(document).ready(function(){
+    $('table').addClass(&quot;table table-sm table-striped&quot;);
+    $('.table.table-sm thead').addClass(&quot;bg-dark text-white&quot;)
+  });
+&lt;/script&gt;
+</code></pre>
 
   </article>
 </div>

@@ -6,3 +6,12 @@
     flex: 1 0 auto;
   }
 }
+
+pre{
+  background-color: $dark;
+  padding: 10px;
+  border-radius: $border-radius;
+  code{
+    color: $warning;
+  }
+}

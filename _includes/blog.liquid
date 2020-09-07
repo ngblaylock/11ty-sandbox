@@ -8,6 +8,13 @@ layout: default
     <h1>
       {{ title }}
     </h1>
-    {{ content | safe }}
+    {{ content }}
   </article>
 </div>
+
+<script>
+  $(document).ready(function(){
+    $('table').addClass("table table-sm table-striped");
+    $('.table.table-sm thead').addClass("bg-dark text-white")
+  });
+</script>

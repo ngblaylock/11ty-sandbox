@@ -9219,4 +9219,14 @@ a.text-medium:hover, a.text-medium:focus {
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
 }
+
+pre {
+  background-color: #343a40;
+  padding: 10px;
+  border-radius: 0.25rem;
+}
+
+pre code {
+  color: #ffd2c6;
+}
 /*# sourceMappingURL=bootstrap-custom.css.map */
