@@ -1,0 +1,42 @@
+---
+layout: default
+---
+
+<div class="container mt-3 blog">
+  <div class="row mb-5">
+    <div class="col-sm-3">
+      <h2 class="">Blogs</h2>
+      <div class="list-group-flush">
+        {%- for post in collections.blogs -%}
+          <a class="list-group-item list-group-item-action {% if page.url contains post.fileSlug %}bg-light{% endif %}" href="{{post.url}}">
+            {{ post.data.title }}
+          </a>
+        {%- endfor -%}
+      </div>
+    </div>
+    <div class="col-sm-9">
+      <h1>
+        {{ title }}
+      </h1>
+      {{ content }}
+
+      {% assign previousPost = collections.blogs | getPreviousCollectionItem: page
+        %}
+
+      {% assign nextPost = collections.blogs | getNextCollectionItem: page %}
+
+      <div class="d-flex justify-content-between">
+        {%if previousPost %}
+          <a class="btn btn-outline-dark" href="{{ previousPost.url }}"><i class="fas fa-chevron-left mr-3"></i>{{ previousPost.data.title }}</a>
+        {% endif %}
+          <div class="spacer"></div>
+        {% if nextPost %}
+          <a class="btn btn-outline-dark" href="{{ nextPost.url }}">
+            {{ nextPost.data.title }}
+            <i class="fas fa-chevron-right ml-3"></i>
+          </a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
