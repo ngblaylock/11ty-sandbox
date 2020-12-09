@@ -6,3 +6,31 @@
     flex: 1 0 auto;
   }
 }
+
+blockquote{
+  border-left: 4px solid $secondary;
+  padding: $spacer;
+  *{
+    margin: 0;
+  }
+}
+
+.blog{
+  img{
+    max-height: 600px;
+    max-width: 600px;
+    display: block;
+    margin: 0 auto;
+  }
+  .caption{
+    font-size: .8em;
+    max-width: 600px;
+    color: $medium;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1em;
+  }
+  p{
+    font-size: 1.05em;
+  }
+}

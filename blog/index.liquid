@@ -1,0 +1,21 @@
+---
+layout: content
+title: Blog Home
+tags: false
+---
+
+<h1>Blog Home</h1>
+
+<p>
+  This is the blog home. Here is a lits of all my fabulous blogs:
+</p>
+
+<ul class="list-unstyled">
+  {%- for blog in collections.blogs reversed -%}
+    <li>
+      <a href="{{ blog.url }}" class="btn btn-light d-block text-left mb-3">{{ blog.data.title }}
+        <small class="d-block">{{blog.date | date: "%B %d, %Y"}}</small>
+      </a>
+    </li>
+  {%- endfor -%}
+</ul>

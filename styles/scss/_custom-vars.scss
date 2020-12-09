@@ -2,12 +2,13 @@ $primary: #680909;
 $secondary: #093589;
 $light: #f1f1f1;
 $warning: #ff8a47;
+$medium: #6C757D;
 
 $headings-font-family: 'Alata', sans-serif;
 $link-color: $secondary;
 
 $theme-colors: (
-  "medium": #6C757D
+  "medium": $medium,
 );
 
 $spacer: 1rem;
